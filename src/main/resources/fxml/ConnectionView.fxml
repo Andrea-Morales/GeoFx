@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane fx:id="view" alignment="CENTER" hgap="5.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" vgap="5.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+   </rowConstraints>
+   <columnConstraints>
+      <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+   </columnConstraints>
+   <children>
+      <VBox spacing="5.0">
+         <children>
+            <Label text="IP ADDRESS">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="ipAddressLabel" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+      <VBox spacing="5.0" GridPane.rowIndex="2">
+         <children>
+            <Label text="TYPE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="typeLabel" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+      <VBox GridPane.rowIndex="3">
+         <children>
+            <Label text="HOSTNAME">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="hostNameLabel" />
+         </children>
+      </VBox>
+      <VBox GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <children>
+            <Label text="ASN">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="ansLabel" />
+         </children>
+      </VBox>
+      <HBox spacing="5.0" GridPane.columnSpan="2" GridPane.rowIndex="1">
+         <children>
+            <ImageView fx:id="registeredImage" fitHeight="19.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Globe-icon.png" />
+               </image></ImageView>
+            <Label text="REGISTERED ISP:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="registeredISPLabel" />
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</GridPane>
